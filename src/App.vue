@@ -113,33 +113,26 @@ export default {
 header {
   background-color: white;
   padding: 0.5rem;
-}
 
-.container {
-  margin: 0 64px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .left_header {
+    width: 32px;
+    height: 32px;
+  }
 
-.left_header {
-  width: 32px;
-  height: 32px;
-}
+  img {
+    width: 100%;
+  }
 
-.left_header img {
-  width: 100%;
-}
+  a {
+    text-decoration: none;
+    font-size: 12px;
+    margin: 0.5rem;
+    color: black;
+  }
 
-.navbar a {
-  text-decoration: none;
-  font-size: 12px;
-  margin: 0.5rem;
-  color: black;
-}
-
-.link_select {
-  color: blue;
+  .link_select {
+    color: blue;
+  }
 }
 
 /* header */
@@ -149,10 +142,10 @@ header {
 main {
   background-color: black;
   height: 64px;
-}
 
-main p {
-  color: white;
+  p {
+    color: white;
+  }
 }
 
 /* main */
@@ -162,38 +155,41 @@ main p {
 footer {
   background-image: url(/img/footer-bg.jpg);
   background-repeat: no-repeat;
+
+  .left_footer {
+    display: flex;
+    padding: 2rem 0;
+  }
+
+  ul {
+    margin: 0 1rem;
+  }
+
+  h4 {
+    color: white;
+  }
+
+  li {
+    color: grey;
+    font-size: 12px;
+    list-style: none;
+    margin: 0.25rem 0;
+  }
+
+  .logo_footer_container {
+    width: 300px;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+    transform: rotate(-45deg);
+    filter: opacity(50%);
+  }
+
 }
 
-.left_footer {
-  display: flex;
-  padding: 2rem 0;
-}
 
-footer ul {
-  margin: 0 1rem;
-}
-
-footer h4 {
-  color: white;
-}
-
-footer li {
-  color: grey;
-  font-size: 12px;
-  list-style: none;
-  margin: 0.25rem 0;
-}
-
-.logo_footer_container {
-  width: 300px;
-}
-
-.logo_footer_container img {
-  width: 100%;
-  display: block;
-  transform: rotate(-45deg);
-  filter: opacity(50%);
-}
 
 /* footer */
 
@@ -202,35 +198,36 @@ footer li {
 .bottom_bar {
   background-color: rgb(42, 42, 42);
   padding: 1rem 0;
-}
 
-.bottom_bar button {
+  button {
   padding: 0.25rem;
   border: 1px solid blue;
   background-color: rgb(42, 42, 42);
   color: white;
 }
 
-.bottom_bar_right{
+.bottom_bar_right {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.bottom_bar_right span{
+span {
   color: blue;
   font-size: 14px;
   margin-right: 8px;
 }
 
-.icon{
+.icon {
   width: 16px;
   height: 16px;
   margin: 0 0.25rem;
 }
 
-.icon img{
+img {
   width: 100%;
+}
+
 }
 
 </style>

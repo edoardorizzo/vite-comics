@@ -5,7 +5,6 @@ export default {
 </script>
 
 <template>
-  <SiteHeader></SiteHeader>
   <header>
     <div class="container">
       <div class="left_header">
@@ -28,7 +27,11 @@ export default {
     </div>
   </header>
 
-  <main></main>
+  <main>
+    <div class="container">
+      <p>__> CONTETNG GOES HERE</p>
+    </div>
+  </main>
 
   <footer></footer>
 </template>
@@ -40,7 +43,7 @@ header {
   padding: 0.5rem;
 }
 
-.container{
+.container {
   margin: 0 64px;
   display: flex;
   justify-content: space-between;
@@ -56,17 +59,27 @@ header {
   width: 100%;
 }
 
-.navbar a{
+.navbar a {
   text-decoration: none;
   font-size: 12px;
   margin: 0.5rem;
   color: black;
 }
-.link_select{
+
+.link_select {
   color: blue;
 }
 
 /* header */
 
+/* main */
 
+main {
+  background-color: black;
+  height: 64px;
+}
+
+main p {
+  color: white;
+}
 </style>

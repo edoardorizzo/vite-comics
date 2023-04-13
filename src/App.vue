@@ -33,7 +33,8 @@ export default {
   <footer></footer>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+/* header */
 header {
   background-color: white;
   padding: 0.5rem;
@@ -48,6 +49,7 @@ header {
 
 .left_header {
   width: 32px;
+  height: 32px;
 }
 
 .left_header img {
@@ -63,4 +65,8 @@ header {
 .link_select{
   color: blue;
 }
+
+/* header */
+
+
 </style>

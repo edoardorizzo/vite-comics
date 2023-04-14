@@ -4,6 +4,7 @@ import SiteMain from './components/SiteMain.vue'
 import SiteFooter from './components/SiteFooter.vue'
 import SiteBottomBar from './components/SiteBottomBar.vue'
 import SiteBanner from './components/SiteBanner.vue'
+import SiteHero from './components/SiteHero.vue'
 export default {
   components: {
     SiteHeader,
@@ -11,6 +12,7 @@ export default {
     SiteFooter,
     SiteBottomBar,
     SiteBanner,
+    SiteHero,
   }
 }
 </script>
@@ -18,6 +20,8 @@ export default {
 <template>
   <SiteHeader></SiteHeader>
 
+  <SiteHero></SiteHero>
+  
   <SiteMain></SiteMain>
 
   <SiteBanner></SiteBanner>
@@ -30,6 +34,7 @@ export default {
 
 <style lang="scss" scoped>
 @use './assets/partials/variables' as *;
+
 
 
 </style>

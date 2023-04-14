@@ -17,7 +17,7 @@
 
 .hero {
   background-image: url(/img/jumbotron.jpg);
-  height: 240px;
+  height: 320px;
   background-size: cover;
   position: relative;
 }

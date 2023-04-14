@@ -86,8 +86,8 @@ header {
   padding: 0.5rem;
 
   .left_header {
-    width: 32px;
-    height: 32px;
+    width: 56px;
+    height: 56px;
   }
 
   img {
@@ -96,10 +96,14 @@ header {
 
   a {
     text-decoration: none;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
     margin: 0.5rem;
     color: $black;
+
+    &:hover{
+      color: $blue;
+    }
   }
 }
 

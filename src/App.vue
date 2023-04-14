@@ -74,7 +74,7 @@ export default {
       </div>
       <div class="right_footer">
         <div class="logo_footer_container">
-          <img src="/img/dc-logo.png" alt="">
+          <img src="/img/dc-logo-bg.png" alt="">
         </div>
       </div>
     </div>
@@ -126,6 +126,7 @@ header {
   a {
     text-decoration: none;
     font-size: 12px;
+    font-weight: bold;
     margin: 0.5rem;
     color: black;
   }
@@ -158,7 +159,6 @@ footer {
 
   .left_footer {
     display: flex;
-    padding: 2rem 0;
   }
 
   ul {
@@ -182,9 +182,6 @@ footer {
 
   img {
     width: 100%;
-    display: block;
-    transform: rotate(-45deg);
-    filter: opacity(50%);
   }
 
 }

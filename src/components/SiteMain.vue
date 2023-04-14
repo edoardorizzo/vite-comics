@@ -1,19 +1,24 @@
 <script>
-    export default {
-        name:'SiteMain',
-        data(){
-            return{
-                
+import ComicCard from './ComicCard.vue'
+export default {
+  components:
+    ComicCard,
+  name: 'SiteMain',
+  data() {
+    return {
 
-            }
-        }
+
     }
+  }
+}
 </script>
 
 <template>
-    <main>
+  <main>
     <div class="container">
-      <p>__> CONTETNG GOES HERE</p>
+      
+      <ComicCard v-for="(series, index) in comics" :src="comic[index].thumb" :alt="comic[index].series" ></ComicCard>
+
     </div>
   </main>
 </template>

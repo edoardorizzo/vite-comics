@@ -1,16 +1,16 @@
 <script>
-    export default {
-        name: 'SiteBanner',
-        data (){
-            return {
+export default {
+  name: 'SiteBanner',
+  data() {
+    return {
 
-            }
-        }
     }
+  }
+}
 </script>
 
 <template>
-    <div class="banner">
+  <div class="banner">
     <div class="banner_section">
       <div class="image_container">
         <img src="/img/buy-comics-digital-comics.png" alt="">
@@ -54,7 +54,7 @@
   justify-content: space-around;
   align-items: center;
 
-  .banner_section{
+  .banner_section {
     display: flex;
     align-items: center;
   }
@@ -77,5 +77,4 @@
     display: inline-block;
   }
 }
-
 </style>

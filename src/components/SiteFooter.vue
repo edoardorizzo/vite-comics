@@ -67,6 +67,7 @@
 footer {
   background-image: url(/img/footer-bg.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
 
   .left_footer {
     display: flex;

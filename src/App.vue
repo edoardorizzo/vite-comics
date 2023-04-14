@@ -1,31 +1,14 @@
 <script>
+import SiteHeader from './components/SiteHeader.vue'
 export default {
-
+  components: {
+    SiteHeader
+  }
 }
 </script>
 
 <template>
-  <header>
-    <div class="container">
-      <div class="left_header">
-        <img src="/img/dc-logo.png" alt="">
-      </div>
-      <div class="right_header">
-        <div class="navbar">
-          <a class="link_select" href="#">CHARACTERS</a>
-          <a href="#">COMICS</a>
-          <a href="#">MOVIES</a>
-          <a href="#">TV</a>
-          <a href="#">GAMES</a>
-          <a href="#">COLLECTIONS</a>
-          <a href="#">VIDEOS</a>
-          <a href="#">FANS</a>
-          <a href="#">NEWS</a>
-          <a href="#">SHOP</a>
-        </div>
-      </div>
-    </div>
-  </header>
+  <SiteHeader></SiteHeader>
 
   <main>
     <div class="container">
@@ -109,34 +92,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-/* header */
-header {
-  background-color: white;
-  padding: 0.5rem;
-
-  .left_header {
-    width: 32px;
-    height: 32px;
-  }
-
-  img {
-    width: 100%;
-  }
-
-  a {
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: bold;
-    margin: 0.5rem;
-    color: black;
-  }
-
-  .link_select {
-    color: blue;
-  }
-}
-
-/* header */
 
 /* main */
 
@@ -182,6 +137,7 @@ footer {
 
   img {
     width: 100%;
+    display: block;
   }
 
 }
@@ -197,34 +153,33 @@ footer {
   padding: 1rem 0;
 
   button {
-  padding: 0.25rem;
-  border: 1px solid blue;
-  background-color: rgb(42, 42, 42);
-  color: white;
-}
+    padding: 0.25rem;
+    border: 1px solid blue;
+    background-color: rgb(42, 42, 42);
+    color: white;
+  }
 
-.bottom_bar_right {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .bottom_bar_right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-span {
-  color: blue;
-  font-size: 14px;
-  margin-right: 8px;
-}
+  span {
+    color: blue;
+    font-size: 14px;
+    margin-right: 8px;
+  }
 
-.icon {
-  width: 16px;
-  height: 16px;
-  margin: 0 0.25rem;
-}
+  .icon {
+    width: 16px;
+    height: 16px;
+    margin: 0 0.25rem;
+  }
 
-img {
-  width: 100%;
-}
+  img {
+    width: 100%;
+  }
 
 }
-
 </style>

@@ -8,6 +8,7 @@ export default {
 </script>
 
 <template>
+
   <SiteHeader></SiteHeader>
 
   <main>
@@ -92,11 +93,12 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use './assets/partials/variables' as *;
 
 /* main */
 
 main {
-  background-color: black;
+  background-color: $black;
   height: 64px;
 
   p {

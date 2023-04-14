@@ -3,6 +3,58 @@
         name:'SiteHeader',
         data(){
             return{
+                menu: [
+                    {
+                        text: 'CHARACTERS',
+                        href: '#',
+                        current: true,
+                    },
+                    {
+                        text: 'COMICS',
+                        href: '#',
+                        current: false,
+                    },
+                    {
+                        text: 'MOVIES',
+                        href: '#',
+                        current: false,
+                    },
+                    {
+                        text: 'TV',
+                        href: '#',
+                        current: false,
+                    },
+                    {
+                        text: 'GAMES',
+                        href: '#',
+                        current: false,
+                    },
+                    {
+                        text: 'COLLECTIONS',
+                        href: '#',
+                        current: false,
+                    },
+                    {
+                        text: 'VIDEOS',
+                        href: '#',
+                        current: false,
+                    },
+                    {
+                        text: 'FANS',
+                        href: '#',
+                        current: false,
+                    },
+                    {
+                        text: 'NEWS',
+                        href: '#',
+                        current: false,
+                    },
+                    {
+                        text: 'SHOP',
+                        href: '#',
+                        current: false,
+                    },
+                ]
 
             }
         }
@@ -17,16 +69,7 @@
       </div>
       <div class="right_header">
         <div class="navbar">
-          <a class="link_select" href="#">CHARACTERS</a>
-          <a href="#">COMICS</a>
-          <a href="#">MOVIES</a>
-          <a href="#">TV</a>
-          <a href="#">GAMES</a>
-          <a href="#">COLLECTIONS</a>
-          <a href="#">VIDEOS</a>
-          <a href="#">FANS</a>
-          <a href="#">NEWS</a>
-          <a href="#">SHOP</a>
+          <a v-for="(text, index) in menu" class="link_select" href="#">{{ menu[index].text }}</a>
         </div>
       </div>
     </div>

@@ -79,9 +79,10 @@
 
 
 <style lang="scss" scoped>
+@use '../assets/partials/variables' as *;
 
 header {
-  background-color: white;
+  background-color: $white;
   padding: 0.5rem;
 
   .left_header {
@@ -98,11 +99,7 @@ header {
     font-size: 12px;
     font-weight: bold;
     margin: 0.5rem;
-    color: black;
-  }
-
-  .link_select {
-    color: blue;
+    color: $black;
   }
 }
 
